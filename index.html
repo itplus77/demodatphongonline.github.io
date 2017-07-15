@@ -1,0 +1,367 @@
+<%@page import="java.util.List"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="themes/style/home.css" />
+        <link rel="stylesheet" href="themes/style/coin-slider-styles.css" type="text/css" />
+        <link rel="stylesheet" href="themes/style/queryslidemenu.css" type="text/css" />
+    </head>
+    <body>
+        <div class="all">
+            <!--HEADER-->
+            <div class="header">
+                <div class="logo">
+                    <a href="./">
+                        <img src="themes/images/logo.png" alt="photo"/></a>
+                </div>
+            </div>
+
+            <!--MENU-->
+            <div id="myslidemenu" class="jqueryslidemenu headerMenu">
+                <ul class="topMenu">
+                    <li><a href="./">Trang chủ</a></li>
+                    <li><a href="#">Phòng</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Phòng thường</a></li>
+                            <li><a href="#">Phòng vip</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="bigBanner" id="coinSlider">
+
+                    <a href="#" title="">
+                        <img src="themes/images/bigBanner.jpg" alt="photo" />
+                        <span>&nbsp;</span>
+                    </a>
+                    <a href="#" title="">
+                        <img src="themes/images/bigBanner_2.png" alt="photo" />
+                        <span>&nbsp;</span>
+                    </a>
+                </div>
+                <div class="bigBannerFooter"></div>
+
+                <div class="colLeft fl">
+                    <div class="homeIntro bottomBorder">
+
+                        <h2>
+                            <img src="themes/images/introTitle.png" /></h2>
+                        <div id="cke_pastebin">
+                            <p><b>Fairy Bay Hotel</b> is the 3 - star hotel in Nha Trang, Vietnam, located on the main beachfront and minutes from the heart of the Nha Trang city, is an ideal vacation paradise for adults and kids alike. Plenty of activities will keep you busy.</p>
+                            <p><b>Fairy Bay Hotel</b> makes boast of 52 rooms and Suites that combine irresistible, dynamic features with a contemporary interior design. A stunning, breathtaking views of the sunset, sunrise over Nha Trang Bay and the city from your private balconies and luxury amenities such as wireless Internet access and 24-hour room service.</p>
+                        </div>
+                        <div id="cke_pastebin" style="text-align: center;">
+                            <img alt="" src="themes/images/bigBanner_2.png" style="width: 100%; height: 250px;" />
+                        </div>
+                        <div id="cke_pastebin">
+                            <p>The <b>Ocean View Restaurant</b> is located on the 10th Floor, here you will find well-known breakfast buffets, a variety of restaurants specializing in regional cuisine, cafes and bars and constant innovation in search of the latest taste sensations and culinary techniques.</p>
+                            <p><b>Ocean View Restaurant</b> offers fine dining for all tastes, whether you decide to enjoy a meal in the open air with ocean views or satisfy your taste buds with exquisite international dishes of European, Asian, seafood specialties as well as Vietnamese. The wonderful selection of hotel restaurants and bars means that choosing a place to eat becomes an adventure of exploration and discovery.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="index.php/mod-product/">
+                            <h2 class="bigTitle">Buồng phòng</h2>
+                        </a>
+                        <div style="width: 600px" class="bottomBorder">
+
+                            <div class="homeProductItem">
+                                <div class="homeProductImage">
+                                    <a href="#">
+                                        <img src="themes/images/1392888917DSC01979.JPG" /></a>
+                                </div>
+                                <div class="homeProductInfo">
+                                    <a href="#">Phòng thường 1 giường đơn</a>
+                                    <div class="priceTag">200.000 - 300.000 VNĐ</div>
+                                    <p>
+                                    <p
+                                    <a href="#" style="display: block; float: right">Xem tiếp</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="homeProductItem">
+                                <div class="homeProductImage">
+                                    <a href="#">
+                                        <img src="themes/images/1392888917DSC01979.JPG" /></a>
+                                </div>
+                                <div class="homeProductInfo">
+                                    <a href="#">Phòng thường 2 giường đơn</a>
+                                    <div class="priceTag">200.000 - 300.000 VNĐ</div>
+                                    <p>
+                                    
+                                    <a href="#" style="display: block; float: right">Xem tiếp</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="colRight fr">
+                    <div class="bookingFormOutline">
+                        <div class="bookingForm">
+                            <h2 class="bookingFormTitle">Đặt phòng trực tuyến</h2>
+                            <form method="post" action="PhieuDat?action=DatPhong">
+                                <ul class="bookingFormContent">
+                                    <li>
+                                        <label>Ngày đến:</label>
+                                        <select name="From_Month">
+                                            <option value="01">Tháng một</option>
+                                            <option value="02">Tháng hai</option>
+                                            <option value="03">Tháng ba</option>
+                                            <option value="04">Tháng tư</option>
+                                            <option value="05">Tháng năm</option>
+                                            <option value="06">Tháng sáu</option>
+                                            <option value="07">Tháng bảy</option>
+                                            <option value="08">Tháng tám</option>
+                                            <option value="09">Tháng chín</option>
+                                            <option value="10">Tháng mười</option>
+                                            <option value="11">Tháng mười một</option>
+                                            <option value="12">Tháng mười hai</option>
+                                        </select>
+                                        <select name="From_Day">
+                                            <option label="01" value="1">01</option>
+                                            <option label="02" value="2">02</option>
+                                            <option label="03" value="3">03</option>
+                                            <option label="04" value="4">04</option>
+                                            <option label="05" value="5">05</option>
+                                            <option label="06" value="6">06</option>
+                                            <option label="07" value="7">07</option>
+                                            <option label="08" value="8">08</option>
+                                            <option label="09" value="9">09</option>
+                                            <option label="10" value="10">10</option>
+                                            <option label="11" value="11">11</option>
+                                            <option label="12" value="12">12</option>
+                                            <option label="13" value="13">13</option>
+                                            <option label="14" value="14">14</option>
+                                            <option label="15" value="15">15</option>
+                                            <option label="16" value="16">16</option>
+                                            <option label="17" value="17">17</option>
+                                            <option label="18" value="18">18</option>
+                                            <option label="19" value="19">19</option>
+                                            <option label="20" value="20">20</option>
+                                            <option label="21" value="21">21</option>
+                                            <option label="22" value="22">22</option>
+                                            <option label="23" value="23">23</option>
+                                            <option label="24" value="24">24</option>
+                                            <option label="25" value="25">25</option>
+                                            <option label="26" value="26">26</option>
+                                            <option label="27" value="27">27</option>
+                                            <option label="28" value="28">28</option>
+                                            <option label="29" value="29">29</option>
+                                            <option label="30" value="30">30</option>
+                                            <option label="31" value="31">31</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>Ngày đi:</label>
+                                        <select name="To_Month">
+                                            <option value="01">Tháng một</option>
+                                            <option value="02">Tháng hai</option>
+                                            <option value="03">Tháng ba</option>
+                                            <option value="04">Tháng tư</option>
+                                            <option value="05">Tháng năm</option>
+                                            <option value="06">Tháng sáu</option>
+                                            <option value="07">Tháng bảy</option>
+                                            <option value="08">Tháng tám</option>
+                                            <option value="09">Tháng chín</option>
+                                            <option value="10">Tháng mười</option>
+                                            <option value="11">Tháng mười một</option>
+                                            <option value="12">Tháng mười hai</option>
+                                        </select>
+                                        <select name="To_Day">
+                                            <option label="01" value="1">01</option>
+                                            <option label="02" value="2">02</option>
+                                            <option label="03" value="3">03</option>
+                                            <option label="04" value="4">04</option>
+                                            <option label="05" value="5">05</option>
+                                            <option label="06" value="6">06</option>
+                                            <option label="07" value="7">07</option>
+                                            <option label="08" value="8">08</option>
+                                            <option label="09" value="9">09</option>
+                                            <option label="10" value="10">10</option>
+                                            <option label="11" value="11">11</option>
+                                            <option label="12" value="12">12</option>
+                                            <option label="13" value="13">13</option>
+                                            <option label="14" value="14">14</option>
+                                            <option label="15" value="15">15</option>
+                                            <option label="16" value="16">16</option>
+                                            <option label="17" value="17">17</option>
+                                            <option label="18" value="18">18</option>
+                                            <option label="19" value="19">19</option>
+                                            <option label="20" value="20">20</option>
+                                            <option label="21" value="21">21</option>
+                                            <option label="22" value="22">22</option>
+                                            <option label="23" value="23">23</option>
+                                            <option label="24" value="24">24</option>
+                                            <option label="25" value="25">25</option>
+                                            <option label="26" value="26">26</option>
+                                            <option label="27" value="27">27</option>
+                                            <option label="28" value="28">28</option>
+                                            <option label="29" value="29">29</option>
+                                            <option label="30" value="30">30</option>
+                                            <option label="31" value="31">31</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>Loại phòng:</label>
+                                        <%
+                                            List<entities.Room> rooms = new model.Room().getRoom();
+                                            pageContext.setAttribute("rooms", rooms);
+                                        %>
+                                        <select name="type_room" style="width: 220px;">
+                                            <c:forEach var="room" items="${rooms}" varStatus="loop">  
+                                                <option value="${room.idroom}">${room.type} (${room.nameP})</option>
+                                            </c:forEach>     
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>Họ tên:</label>
+                                        <input class="" type="text" value="" id="" name="full_name">
+                                    </li>
+                                    <li>
+                                        <label>CMND:</label>
+                                        <input class="" type="text" value="" id="" name="cmnd_number">
+                                    </li>
+                                    <li>
+                                        <label>Điện thoại:</label>
+                                        <input class="" type="text" value="" id="" name="phone_number">
+                                    </li>
+                                    <li>
+                                        <label>Email:</label>
+                                        <input class="" type="text" value="" id="" name="email">
+                                    </li>
+                                    <li>
+                                        ${Message}
+                                    </li>
+                                    <li>
+                                        <input class="fr" type="submit" value="Đặt phòng" id="" name="">
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="supportOnline" hidden>
+                        <h2 class="bigTitle">Đăng nhập</h2>
+                        <form method="post" onsubmit="return validateForm(this);" action="account?action=login">
+                            <ul class="bookingFormContent">
+                                <li>
+                                    <label>Username:</label>
+                                    <input class="" type="text" value="" id="" name="username"/>
+                                </li>
+                                <li>
+                                    <label>Mật khẩu:</label>
+                                    <input class="" type="password" value="" id="" name="password"/>
+                                </li>
+                                <li>
+                                    ${Message}
+                                </li>
+                                <li>
+                                    <input class="fr" type="submit" value="Đăng nhập" id="" name=""/>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <h2 class="bigTitle">Bảng giá</h2>
+                    <div class="priceTable">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="50%" />
+                                <col width="35%" />
+                                <col width="15%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>Phòng nghỉ</th>
+                                    <th>Giá (VNĐ)</th>
+                                    <th>Thời gian</th>
+                                </tr>
+                                <tr>
+                                    <td>Phòng thường 1 giường đơn</td>
+                                    <td>100 - 250 VNĐ</td>
+                                    <td>Ngày</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng thường 2 giường đơn</td>
+                                    <td>200 - 300 VNĐ</td>
+                                    <td>Ngày</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                    </div>
+                    <div class="supportOnline">
+                        <h2 class="bigTitle">Phòng lễ tân</h2>
+
+                        <div class="supportInfo fl">
+                            <b>Trần Thanh Phương </b>
+                            <p><b>0986469479</b></p>
+							<b>Trịnh Đình phúc </b>
+                            <p><b>0123555777</b></p>
+							<b>Lê thị hoài thuận </b>
+                            <p><b>0984584587</b></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="footer">
+            © 2017 <a href="#">Khách sạn FairyBay </a>
+            <br />
+            Địa chỉ: 46 Phạm Văn Đồng - Thành phố Nha Trang<br />
+            Hotline: 0xxx xxx xxx - Email: xxx@gmail.com
+        </div>
+    </body>
+
+    <script type="text/javascript" src="themes/js/jquery-latest.js"></script>
+    <script src="themes/js/galleria-1.2.6.min.js"></script>
+    <script type="text/javascript" src="themes/js/coin-slider.min.js"></script>
+    <script type="text/javascript" src="themes/js/validate.js"></script>
+    <script type="text/javascript" src="themes/js/jqueryslidemenu.js"></script>
+    <script type="text/javascript" charset="utf-8">
+                            //<![CDATA[
+                            $(document).ready(function () {
+                                $('#coinSlider').coinslider({
+                                    width: 960, // width of slider panel
+                                    height: 400, // height of slider panel
+                                    spw: 8, // squares per width
+                                    sph: 6, // squares per height
+                                    delay: 3000, // delay between images in ms
+                                    sDelay: 30, // delay beetwen squares in ms
+                                    opacity: 0.70, // opacity of title and navigation
+                                    titleSpeed: 500, // speed of title appereance in ms
+                                    effect: '', // random, swirl, rain, straight
+                                    navigation: true, // prev next and buttons
+                                    links: true, // show images as links
+                                    hoverPause: true // pause on hover
+
+                                });
+
+                                //Focus textbox
+                                $('.inputLabel').each(function () {
+                                    this.value = $(this).attr('title');
+                                    $(this).focus(function () {
+                                        if (this.value == $(this).attr('title')) {
+                                            this.value = '';
+                                        }
+                                    });
+                                    $(this).blur(function () {
+                                        if (this.value == '') {
+                                            this.value = $(this).attr('title');
+                                        }
+                                    });
+                                });
+                            });
+                            //]]>	
+    </script>
+</html>
